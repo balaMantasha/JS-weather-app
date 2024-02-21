@@ -12,7 +12,9 @@ if(response.status==404){
     document.querySelector(".error").style.display="block";
     document.querySelector(".weather").style.display="none";
 }
-
+else{
+    document.querySelector(".error").style.display="none";
+}
 
 
     var data = await response.json();
@@ -27,7 +29,7 @@ if(response.status==404){
 
     document.querySelector(".weather").style.display= "block";
 
-    // document.querySelector(".error")
+    
 }
 
 searchBtn.addEventListener("click" , ()=>{
